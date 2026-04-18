@@ -1,0 +1,19 @@
+body {
+    background: plum;
+    padding: 50px;
+}
+
+h1,
+h2,
+h3 {
+    color: blue;
+    font-family: sans-serif;
+}
+
+img {
+    width: 500px;
+}
+
+#bat {
+    width: 10px;
+}

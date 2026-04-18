@@ -1,0 +1,62 @@
+html {
+    font-family:"Bitcount Grid Double", system-ui; 
+    color: black;
+    background-color: rgb(248, 221, 241); 
+    padding-left: 1cm;
+}
+
+h1 {
+    color:turquoise;
+}
+
+p {
+    font-size: 18px; 
+}
+
+.red {
+    color: red;
+}
+
+h2 {
+    text-align: center; 
+    background-color: aliceblue; 
+    border: 1px solid black;
+        padding: 0.5em 0.2em 0.2em 0.5em;
+}
+
+.highlight {
+    display: inline-block;
+    padding: .25em 0;
+    background-color: seashell;
+    color: black;
+}
+
+.bluehl {
+    background-color: aquamarine;
+}
+
+.pinkhl {
+    background-color: pink;
+}
+
+.violethl {
+    background-color: palevioletred;
+}
+
+.salmonhl {
+    background-color: salmon;
+}
+
+#img-small {
+    width: 10px;
+}
+
+.testdiv {
+    background: lemonchiffon;
+    margin: 30px;
+    padding: 40px;
+}
+
+.my-flex {
+    display: flex;
+}
