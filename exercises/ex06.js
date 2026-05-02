@@ -7,6 +7,8 @@ let colorCount = 0;
 let mood = "neutral";
 
 //reusable functions
+//purple = function name
+//brown = parameter name
 
 function makeImage(colorToMatch) {
     //what the function actually does

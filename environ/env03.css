@@ -68,7 +68,8 @@ a {
 }
 
 #textbox {
-  max-width: 90vw;
+  width: 90vw;
+  height: 13vh;
   margin-left: 2vw;
 }
 
