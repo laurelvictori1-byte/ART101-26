@@ -22,33 +22,67 @@ function fadeText(newDialogue) {
 }
 
 function playAudio (musicType) {
-    new Audio(musicType).play();
+    let song = new Audio(musicType);
+    song.play();
+    return song
 }
 
-function stopAudio (otherMusic) {
-    new Audio(otherMusic).pause();
+function stopAudio (songToPause) {
+    songToPause.pause();
 }
+
+let curSong = null;
+let songPlaying = false;
 
 function chooseAudio () {
     let userChoice = prompt("What do you want me to sing? " +
     "Something dramatic, something upbeat, something jazzy, something seasonal, or something electronic?"
     );
 
-    if (userChoice == "dramatic") {
-        stopAudio ("butterfly.mp3", "dreameater.mp3", "halloween.mp3", "remote.mp3");
-        playAudio ("blackvow.mp3");
+    if (userChoice.toLowerCase() == "dramatic" || userChoice == "something dramatic") {
+        if (!songPlaying){
+            curSong = playAudio ("blackvow.mp3");
+            songPlaying = true;
+        } else {
+            stopAudio (curSong);
+            curSong = playAudio ("blackvow.mp3");
+        }
     }
-    else if (userChoice == "upbeat") {
-        playAudio ("butterfly.mp3");
+    else if (userChoice.toLocaleLowerCase() == "upbeat" || userChoice == "something upbeat") {
+        if (!songPlaying){
+            curSong = playAudio ("butterfly.mp3");
+            songPlaying = true;
+        } else {
+            stopAudio (curSong);
+            curSong = playAudio ("butterfly.mp3");
+        }
     }
-    else if (userChoice == "jazzy") {
-        playAudio ("dreameater.mp3");
+    else if (userChoice.toLocaleLowerCase() == "jazzy" || userChoice == "something jazzy") {
+        if (!songPlaying){
+            curSong = playAudio ("dreameater.mp3");
+            songPlaying = true;
+        } else {
+            stopAudio (curSong);
+            curSong = playAudio ("dreameater.mp3");
+        }
     }
-    else if (userChoice == "seasonal") {
-        playAudio ("halloween.mp3");
+    else if (userChoice.toLocaleLowerCase() == "seasonal" || userChoice == "something seasonal") {
+        if (!songPlaying){
+            curSong = playAudio ("halloween.mp3");
+            songPlaying = true;
+        } else {
+            stopAudio (curSong);
+            curSong = playAudio ("halloween.mp3");
+        }
     }
-    else if (userChoice == "electronic") {
-        playAudio ("remote.mp3");
+    else if (userChoice.toLocaleLowerCase() == "electronic" || userChoice == "something electronic") {
+        if (!songPlaying){
+            curSong = playAudio ("remote.mp3");
+            songPlaying = true;
+        } else {
+            stopAudio (curSong);
+            curSong = playAudio ("remote.mp3");
+        }
     }
 }       
 
