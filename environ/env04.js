@@ -39,7 +39,7 @@ function chooseAudio () {
     "Something dramatic, something upbeat, something jazzy, something seasonal, or something electronic?"
     );
 
-    if (userChoice.toLowerCase() == "dramatic" || userChoice == "something dramatic") {
+    if (userChoice.toLowerCase() == "dramatic" || userChoice.toLowerCase() == "something dramatic") {
         if (!songPlaying){
             curSong = playAudio ("blackvow.mp3");
             songPlaying = true;
@@ -48,7 +48,7 @@ function chooseAudio () {
             curSong = playAudio ("blackvow.mp3");
         }
     }
-    else if (userChoice.toLocaleLowerCase() == "upbeat" || userChoice == "something upbeat") {
+    else if (userChoice.toLocaleLowerCase() == "upbeat" || userChoice.toLowerCase() == "something upbeat") {
         if (!songPlaying){
             curSong = playAudio ("butterfly.mp3");
             songPlaying = true;
@@ -57,7 +57,7 @@ function chooseAudio () {
             curSong = playAudio ("butterfly.mp3");
         }
     }
-    else if (userChoice.toLocaleLowerCase() == "jazzy" || userChoice == "something jazzy") {
+    else if (userChoice.toLocaleLowerCase() == "jazzy" || userChoice.toLowerCase() == "something jazzy") {
         if (!songPlaying){
             curSong = playAudio ("dreameater.mp3");
             songPlaying = true;
@@ -66,7 +66,7 @@ function chooseAudio () {
             curSong = playAudio ("dreameater.mp3");
         }
     }
-    else if (userChoice.toLocaleLowerCase() == "seasonal" || userChoice == "something seasonal") {
+    else if (userChoice.toLocaleLowerCase() == "seasonal" || userChoice.toLowerCase() == "something seasonal") {
         if (!songPlaying){
             curSong = playAudio ("halloween.mp3");
             songPlaying = true;
@@ -75,7 +75,7 @@ function chooseAudio () {
             curSong = playAudio ("halloween.mp3");
         }
     }
-    else if (userChoice.toLocaleLowerCase() == "electronic" || userChoice == "something electronic") {
+    else if (userChoice.toLocaleLowerCase() == "electronic" || userChoice.toLowerCase() == "something electronic") {
         if (!songPlaying){
             curSong = playAudio ("remote.mp3");
             songPlaying = true;
