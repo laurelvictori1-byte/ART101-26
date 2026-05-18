@@ -5,7 +5,7 @@
 }
 
 #creature-form DIV {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #creature-list {
@@ -16,11 +16,26 @@
 }
 
 #creature-list>DIV {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.creature-body {
     background: pink;
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
+
+/* .eye {
+    height: 18px;
+    width: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+} */
