@@ -13,8 +13,7 @@ $("#creature").hover(
   function () {
     $("#thought").stop(true, true).slideUp(300);
     $("#status").text("The thought disappeared.");
-  }
-);
+  });
 
 $(document).keydown(function (event) {
     if (event.key === " " || event.code === "Space") {
@@ -25,7 +24,8 @@ $(document).keydown(function (event) {
 
         if (following === true) {
         $("#status").text("The creature is following your cursor.");
-        } else {
+        } 
+        else {
         $("#status").text("The creature stopped following you.");
         }
     }

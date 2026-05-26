@@ -1,12 +1,6 @@
-let environmentTitle = "Classroom";
-
-let environmentElements = ["tables", "chairs", "text box", "len", "doors"];
-
-let mainEntity = {
+let HatsuneMiku = {
     name: "Hatsuni Miki",
-    character: "Childhood Friend",
     mood: ["happy", "upset"],
-    isFriendInterest: true,
     favoriteFoods: ["melon pan", "taiyaki", "shaved ice", "leeks"],
     moodCount: 0,
     favoriteFoodsCount: 0
@@ -87,23 +81,23 @@ function chooseAudio () {
 }       
 
 $("#dialogue-1").click(function () {
-    console.log("mood count" + mainEntity.moodCount);
+    console.log("mood count" + HatsuneMiku.moodCount);
     console.log("dia-1 is clicked");
-    fadeText("Yoroshiku! My name is " + mainEntity.name + ". I'm feeling " + mainEntity.mood[mainEntity.moodCount] + ". "); 
-    mainEntity.moodCount = mainEntity.moodCount + 1;
-    if (mainEntity.moodCount==2) { 
-        mainEntity.moodCount=0; 
+    fadeText("Yoroshiku! My name is " + HatsuneMiku.name + ". I'm feeling " + HatsuneMiku.mood[HatsuneMiku.moodCount] + ". "); 
+    HatsuneMiku.moodCount = HatsuneMiku.moodCount + 1;
+    if (HatsuneMiku.moodCount==2) { 
+        HatsuneMiku.moodCount=0; 
     }
 });
 
 $("#dialogue-2").click(function () {
-    console.log("food count" + mainEntity.favoriteFoodsCount);
+    console.log("food count" + HatsuneMiku.favoriteFoodsCount);
     console.log("dia-2 is clicked");
-    fadeText("That's not very nice! I'm " + mainEntity.name + ". My favorite food is " 
-    + mainEntity.favoriteFoods[mainEntity.favoriteFoodsCount] + ". ");
-    mainEntity.favoriteFoodsCount = mainEntity.favoriteFoodsCount + 1;
-    if (mainEntity.favoriteFoodsCount==4) { 
-        mainEntity.favoriteFoodsCount=0; 
+    fadeText("That's not very nice! I'm " + HatsuneMiku.name + ". My favorite food is " 
+    + HatsuneMiku.favoriteFoods[HatsuneMiku.favoriteFoodsCount] + ". ");
+    HatsuneMiku.favoriteFoodsCount = HatsuneMiku.favoriteFoodsCount + 1;
+    if (HatsuneMiku.favoriteFoodsCount==4) { 
+        HatsuneMiku.favoriteFoodsCount=0; 
     }
 });
 
@@ -112,7 +106,7 @@ $("#len").click(function() {
     chooseAudio ();
 });
 
-$("#hoverclock").hover(
+$("#hoverclocktext").hover(
   function () {
     $("#time").stop(true, true).slideDown(300);
 },
@@ -120,7 +114,7 @@ $("#hoverclock").hover(
     $("#time").stop(true, true).slideUp(300);
 });
 
-$("#hoverlen").hover(
+$("#hoverlentext").hover(
   function () {
     $("#clickme").stop(true, true).slideDown(300);
 },
