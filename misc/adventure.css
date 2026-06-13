@@ -1,0 +1,24 @@
+body {
+    background: black;
+}
+
+html {
+    color: limegreen;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vh;
+    letter-spacing: 0.1vh;
+}
+
+#answer {
+    background: transparent;
+    color: limegreen;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vh;
+    letter-spacing: 0.1vh;    
+    border: None;
+    outline: None;
+}

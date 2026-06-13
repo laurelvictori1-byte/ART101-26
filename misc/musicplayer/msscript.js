@@ -26,7 +26,7 @@ let curr_track = document.createElement('audio');
 let track_list = [
   {
     name: "Black Vow",
-    artist: "Kagamine Len and Ren, ft. Hatsune Miku",
+    artist: "Kagamine Len and Rin, ft. Hatsune Miku",
     image: "Image URL",
     path: "blackvow.mp3"
   },
@@ -38,7 +38,7 @@ let track_list = [
   },
   {
     name: "Trick or Treat",
-    artist: "Kagamine Len and Ren",
+    artist: "Kagamine Len and Rin",
     image: "Image URL",
     path: "halloween.mp3",
   },
